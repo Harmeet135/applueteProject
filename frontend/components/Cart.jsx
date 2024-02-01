@@ -13,7 +13,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     try {
-      const response = await axios.post(`${NEXT_BACKEND_CALL}`, cartItems);
+      const response = await axios.post(`https://applueteproject-production.up.railway.app/stripe/create-checkout-session`, cartItems);
       if (response.data.url) {
         window.location.href = response.data.url;
       }
