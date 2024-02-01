@@ -16,3 +16,8 @@ Try it at https://appluete-project.vercel.app/
 - npm install --legacy-peer-deps
 - after the backend is running change the backend url to localhost:3000 or the port you are running it on 
 - npm run dev (the frontend will start running on localhost:3001)
+
+
+## about
+Frontend - NextJs (sanity.io for storing the products)
+Backend - NestJs (For Stripe)
