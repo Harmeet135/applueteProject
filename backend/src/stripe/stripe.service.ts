@@ -39,8 +39,8 @@ export class StripeService {
           quantity: item.quantity
         };
       }),
-      success_url: `${headers.origin}/success`,
-      cancel_url: `http://localhost:3001`,
+      success_url: `${process.env.HEADER_URL}/success`,
+      cancel_url: `${process.env.HEADER_URL}`,
     });
   
     return session;
