@@ -15,8 +15,8 @@ export class StripeController {
       throw new HttpException(err.message, err.statusCode || HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
-  @Post('charge')
-  async createCharge(@Body() chargeParams) {
-      return this.stripeService.createCharge(chargeParams.amount, chargeParams.currency, chargeParams.source, chargeParams.description);
-  }
+  // @Post('charge')
+  // async createCharge(@Body() chargeParams) {
+  //     return this.stripeService.createCharge(chargeParams.amount, chargeParams.currency, chargeParams.source, chargeParams.description);
+  // }
 }
